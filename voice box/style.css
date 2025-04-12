@@ -1,0 +1,174 @@
+/* styles.css */
+body.bg-gaming {
+    background: url(Untitled\(34\).png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .navbar .logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px #000;
+  }
+  
+  .about-section, .tournaments, .contact-form, .payment-form {
+    padding: 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .description-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  .social-iframe iframe {
+    width: 200px;
+    height: 300px;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .contact-form, .payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  input, textarea, select, button {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #00ffcc;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00ccaa;
+  }
+  
+  .tournament-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .tournament-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .tournament-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffee;
+  }
+  
+  .tournament-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #00ffcc;
+  }
+  
+  footer a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .contact-form, .payment-form {
+      width: 90%;
+    }
+  }
+  
